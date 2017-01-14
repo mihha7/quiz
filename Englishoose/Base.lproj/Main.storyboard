@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Englishoose" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hiragana_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -38,22 +38,22 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BTS-CT-4OD" id="hNj-Vo-ieR">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cie-E4-vFT">
-                                                    <rect key="frame" x="93" y="15" width="32" height="20"/>
+                                                    <rect key="frame" x="94" y="16" width="31.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon" id="g6P-6A-sRX">
-                                                    <rect key="frame" x="15" y="0.0" width="63" height="63"/>
+                                                    <rect key="frame" x="15" y="0.0" width="64" height="63.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EKe-0b-nXQ">
-                                                    <rect key="frame" x="93" y="35" width="41" height="14"/>
+                                                    <rect key="frame" x="94" y="35.5" width="40.5" height="13.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -106,7 +106,7 @@
         <!--Quiz Controller-->
         <scene sceneID="v2Q-D6-3bh">
             <objects>
-                <viewController id="seo-EU-vYh" customClass="QuizController" customModule="Englishoose" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="seo-EU-vYh" customClass="QuizController" customModule="Hiragana_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IIO-MJ-TKJ"/>
                         <viewControllerLayoutGuide type="bottom" id="6Fi-1z-VBq"/>
@@ -256,7 +256,7 @@
         <!--Check Answer Controller-->
         <scene sceneID="byh-0E-6yk">
             <objects>
-                <viewController id="B2M-ec-nnF" customClass="CheckAnswerController" customModule="Englishoose" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="B2M-ec-nnF" customClass="CheckAnswerController" customModule="Hiragana_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ztT-F2-k4c"/>
                         <viewControllerLayoutGuide type="bottom" id="thn-Ro-pTB"/>
