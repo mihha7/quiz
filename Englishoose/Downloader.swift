@@ -13,9 +13,9 @@ class Downloader {
     static let TARGET = NSBundle.mainBundle().infoDictionary?["CFBundleName"] as! String
 
     static let fm = NSFileManager.defaultManager()
-    static let BASEURL = "https://lmlab.net/englishoose/"
+    static let BASEURL = "http://www.mihha.com/themes/mihhano/"
     static let BASEDIR = NSHomeDirectory()+"/Documents/"
-    static let INDEX = "index.json"
+    static let INDEX = "hiraganaquiz.json"
     static let SERIAL = "serial.json"
     static var latest_serial = 0
     
