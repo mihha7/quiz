@@ -146,6 +146,18 @@ class Downloader {
                         d.imgname += [o as! [String]]
                         d.images[i] = i+".png"
                     }
+                    guard let options = q["options"] as? NSArray else {
+                        print("Could not get option.")
+                        continue
+                    }
+                    for _o in options{
+                        guard let o = _o as? NSArray else {
+                            print("Could not get o.")
+                            continue
+                        }
+                        if (o.count != 4) { continue }
+                        d.options += [o as! [String]]
+                    }
                     
                     drills += [d]
                 }

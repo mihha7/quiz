@@ -22,6 +22,7 @@ class QuizController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var backButton: UIButton!
     
     var data = [Array<String>]() // 問題データ
+    var choice = [Array<String>]()//ひらがなの選択肢
     var images :[String:String] = [:]
     var ans_data = Array<Bool>()
     var answer = "" // 正解
@@ -59,8 +60,9 @@ class QuizController: UIViewController, AVAudioPlayerDelegate {
     }
     
     func loadDrill(drill: Drill) {
-        data = drill.options
+        data = drill.imgname
         images = drill.images
+        choice = drill.options
         shuffle(&data)
     }
     
@@ -103,16 +105,19 @@ class QuizController: UIViewController, AVAudioPlayerDelegate {
         answer = row[0]
         imageView.image = UIImage(contentsOfFile: Downloader.BASEDIR+images[answer]!)
         
+        let choicename = choice[i]
+        
         var idx = [0,1,2,3]
         shuffle(&idx)
         
-        option1.setTitle(row[idx[0]], forState: UIControlState.Normal)
-        option2.setTitle(row[idx[1]], forState: UIControlState.Normal)
-        option3.setTitle(row[idx[2]], forState: UIControlState.Normal)
-        option4.setTitle(row[idx[3]], forState: UIControlState.Normal)
+        option1.setTitle(choicename[idx[0]], forState: UIControlState.Normal)
+        option2.setTitle(choicename[idx[1]], forState: UIControlState.Normal)
+        option3.setTitle(choicename[idx[2]], forState: UIControlState.Normal)
+        option4.setTitle(choicename[idx[3]], forState: UIControlState.Normal)
     }
     
     func shuffle<T>(inout array: [T]) {
+        print(array.count)
         for i in 0..<array.count - 1 {
             let j = Int(arc4random_uniform(UInt32(array.count - i))) + i
             guard i != j else { continue }

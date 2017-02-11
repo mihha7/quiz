@@ -81,6 +81,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             let quizController:QuizController = segue.destinationViewController as! QuizController
             let i = table.indexPathForSelectedRow!.row
+            print(drills)
             quizController.loadDrill(drills[i])
         }
     }
