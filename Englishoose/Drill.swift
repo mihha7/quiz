@@ -14,6 +14,7 @@ class Drill {
     var author: String = ""
     var images: [String:String] = [:]
     var options:[[String]] = []
+    var imgname:[[String]] = []
 
     // 0番目の要素が常に正解
     func answer(index: Int) -> String{

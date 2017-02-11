@@ -128,11 +128,11 @@ class Downloader {
                     d.title = q["title"] == nil ? "" : (q["title"] as! String)
                     d.author = q["created_by"] == nil ? "" : (q["created_by"] as! String)
                     d.published_at = q["created_at"] == nil ? "" : (q["created_at"] as! String)
-                    guard let options = q["options"] as? NSArray else {
+                    guard let imgname = q["imgname"] as? NSArray else {
                         print("Could not get option.")
                         continue
                     }
-                    for _o in options{
+                    for _o in imgname{
                         guard let o = _o as? NSArray else {
                             print("Could not get o.")
                             continue
@@ -143,7 +143,7 @@ class Downloader {
                         }
                         files += [i+".png"]
                         if (o.count != 4) { continue }
-                        d.options += [o as! [String]]
+                        d.imgname += [o as! [String]]
                         d.images[i] = i+".png"
                     }
                     
