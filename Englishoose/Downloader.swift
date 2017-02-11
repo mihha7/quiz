@@ -13,9 +13,9 @@ class Downloader {
     static let TARGET = NSBundle.mainBundle().infoDictionary?["CFBundleName"] as! String
 
     static let fm = NSFileManager.defaultManager()
-    static let BASEURL = "http://www.mihha.com/themes/mihhano/"
+    static let BASEURL = "https://mihha.heteml.jp/mihhano/themes/mihhano/hiraganaquiz/"
     static let BASEDIR = NSHomeDirectory()+"/Documents/"
-    static let INDEX = "hiraganaquiz.json"
+    static let INDEX = "index.json"
     static let SERIAL = "serial.json"
     static var latest_serial = 0
     
@@ -27,7 +27,6 @@ class Downloader {
         }
         
         // TODO:ネットに繋がっていない場合、どうエラーを返す？
-        
         let urlstr = BASEURL+file.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())!
             + "?rand=" + String(rand())
         guard let URL = NSURL(string: urlstr) else {
