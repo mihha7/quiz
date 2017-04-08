@@ -82,15 +82,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="BBW-2s-zQ9" firstAttribute="centerY" secondItem="9Bb-xX-8sj" secondAttribute="centerY" id="0bg-SA-3Lk"/>
-                            <constraint firstItem="HeW-Iq-gfq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="8y3-Mt-kgT"/>
+                            <constraint firstItem="HeW-Iq-gfq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="57Z-nb-ieU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HeW-Iq-gfq" secondAttribute="trailing" constant="-8" id="9qk-AA-Hen"/>
-                            <constraint firstItem="9Bb-xX-8sj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="FrF-tU-Aw5"/>
                             <constraint firstItem="BBW-2s-zQ9" firstAttribute="leading" secondItem="9Bb-xX-8sj" secondAttribute="trailing" constant="8" id="SRT-8a-F2Y"/>
                             <constraint firstItem="FvW-dM-3or" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="XLE-CY-MeK"/>
                             <constraint firstItem="9Bb-xX-8sj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gpM-S4-xo9"/>
                             <constraint firstItem="FvW-dM-3or" firstAttribute="top" secondItem="9Bb-xX-8sj" secondAttribute="bottom" constant="8" id="hIi-Ta-oSU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FvW-dM-3or" secondAttribute="trailing" constant="-20" id="klH-ag-s0R"/>
                             <constraint firstItem="BBW-2s-zQ9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tcf-af-lcf"/>
+                            <constraint firstItem="9Bb-xX-8sj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="vAh-Au-Dqd"/>
                         </constraints>
                     </view>
                     <connections>
