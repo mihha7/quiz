@@ -26,6 +26,7 @@ class QuizController: UIViewController, AVAudioPlayerDelegate {
     var images :[String:String] = [:]
     var ans_data = Array<Bool>()
     var answer = "" // 正解
+    var answerimg = "" //正解画像
     
     var view_state = 0 // viewの状態を保持
     
@@ -63,7 +64,7 @@ class QuizController: UIViewController, AVAudioPlayerDelegate {
         data = drill.imgname
         images = drill.images
         choice = drill.options
-        shuffle(&data)
+        //shuffle(&data)
     }
     
     
@@ -75,9 +76,11 @@ class QuizController: UIViewController, AVAudioPlayerDelegate {
         ansImageView.image = nil
         let row = data[i]
         let choicename = choice[i]
-        answer = row[0]
+        answerimg = row[0]
+        answer = choicename[0]
         
-        imageView.image = UIImage(contentsOfFile: Downloader.BASEDIR+images[answer]!)
+        imageView.image = UIImage(contentsOfFile: Downloader.BASEDIR+images[answerimg]!)
+        print(answerimg)
         
         var idx = [0,1,2,3]
         shuffle(&idx)
