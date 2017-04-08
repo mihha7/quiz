@@ -22,7 +22,7 @@ class QuizController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var backButton: UIButton!
     
     var data = [Array<String>]() // 問題データ
-    var choice = [Array<String>]()//ひらがなの選択肢
+    var choice = [Array<String>]() //ひらがなの選択肢
     var images :[String:String] = [:]
     var ans_data = Array<Bool>()
     var answer = "" // 正解
@@ -66,34 +66,6 @@ class QuizController: UIViewController, AVAudioPlayerDelegate {
         shuffle(&data)
     }
     
-    // 旧版で使っていたメソッド、もう使いません。
-    func loadQuestions(name: String){
-        if let path = NSBundle.mainBundle().pathForResource(name, ofType: "txt") {
-            data = [Array<String>]()
-            do {
-                let d = try String(contentsOfFile: path)
-                let lines = d.componentsSeparatedByString("\n")
-                for line in lines {
-                    let row = line.componentsSeparatedByString(",")
-                    if row.count != 4 { continue }
-                    data.append(row)
-                }
-            } catch {
-                print("can't find data.")
-            }
-            if data.count < 2 {
-                print("too short.")
-                return
-            }
-            
-            print(data)
-            shuffle(&data)
-            print(data)
-            print(data.count)
-        }else{
-            print("can't find path.")
-        }
-    }
     
     func loadQuestion(i: Int) {
         option1.backgroundColor = UIColor.lightGrayColor()
@@ -102,10 +74,10 @@ class QuizController: UIViewController, AVAudioPlayerDelegate {
         option4.backgroundColor = UIColor.lightGrayColor()
         ansImageView.image = nil
         let row = data[i]
-        answer = row[0]
-        imageView.image = UIImage(contentsOfFile: Downloader.BASEDIR+images[answer]!)
-        
         let choicename = choice[i]
+        answer = row[0]
+        
+        imageView.image = UIImage(contentsOfFile: Downloader.BASEDIR+images[answer]!)
         
         var idx = [0,1,2,3]
         shuffle(&idx)

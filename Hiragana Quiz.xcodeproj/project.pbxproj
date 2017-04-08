@@ -12,7 +12,6 @@
 		130EB9011D56F1DE00D48608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EBAD261C1ADEF300A3F596 /* AppDelegate.swift */; };
 		130EB9021D56F1DE00D48608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EBAD281C1ADEF300A3F596 /* ViewController.swift */; };
 		130EB9031D56F1DE00D48608 /* CheckAnswerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0149B31C5B5FC7003FE01E /* CheckAnswerController.swift */; };
-		130EB9041D56F1DE00D48608 /* QuizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EBAD541C1AE94300A3F596 /* QuizController.swift */; };
 		130EB9051D56F1DE00D48608 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13829C2D1D23FA3E0063D629 /* Downloader.swift */; };
 		130EB9061D56F1DE00D48608 /* Drill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1386722D1D28AF390061BC5D /* Drill.swift */; };
 		130EB9071D56F1F100D48608 /* se_maoudamashii_chime13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 13C854EE1C5CCC8500354117 /* se_maoudamashii_chime13.mp3 */; };
@@ -350,7 +349,6 @@
 				130EB9011D56F1DE00D48608 /* AppDelegate.swift in Sources */,
 				130EB9021D56F1DE00D48608 /* ViewController.swift in Sources */,
 				130EB9031D56F1DE00D48608 /* CheckAnswerController.swift in Sources */,
-				130EB9041D56F1DE00D48608 /* QuizController.swift in Sources */,
 				130EB9051D56F1DE00D48608 /* Downloader.swift in Sources */,
 				130EB9061D56F1DE00D48608 /* Drill.swift in Sources */,
 			);
